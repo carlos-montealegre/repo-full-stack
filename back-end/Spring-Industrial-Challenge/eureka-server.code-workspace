@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "eureka-server"
+		},
+		{
+			"name": "user",
+			"path": "user"
+		},
+		{
+			"name": "product",
+			"path": "product"
+		},
+		{
+			"name": "authservice",
+			"path": "authservice"
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	}
+}
