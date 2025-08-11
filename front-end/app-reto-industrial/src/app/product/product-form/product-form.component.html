@@ -1,0 +1,21 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="mb-4">
+  <div class="row g-3">
+    <div class="col-md-3">
+      <input type="text" formControlName="name" class="form-control" placeholder="Nombre">
+    </div>
+    <div class="col-md-2">
+      <input type="number" formControlName="price" class="form-control" placeholder="Precio">
+    </div>
+    <div class="col-md-2">
+      <input type="number" formControlName="stock" class="form-control" placeholder="Stock">
+    </div>
+    <div class="col-md-3">
+      <button type="submit" class="btn btn-primary">
+        {{ product ? 'Actualizar' : 'Crear' }}
+      </button>
+      <button *ngIf="product" type="button" class="btn btn-secondary ms-2" (click)="onCancel()">
+        Cancelar
+      </button>
+    </div>
+  </div>
+</form>
